@@ -1,0 +1,66 @@
+version: '3.4'
+
+services:
+  rabbit:
+    container_name: "rabbit"
+    image: rabbitmq:management
+    ports:
+    - "5672:5672"
+    - "15672:15672"
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 5s
+      timeout: 25s
+      retries: 5
+  redis:
+    image: "redis"
+    command: redis-server --requirepass redis_pass
+    ports:
+     - "6379:6379"
+    environment:
+     - REDIS_REPLICATION_MODE=master
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 25s
+      retries: 5
+  db:
+    container_name: "db"
+    image: postgres
+    restart: always
+    ports: 
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: pass
+      POSTGRES_USER: usr
+    expose: 
+      - "5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U usr"]
+      interval: 5s
+      timeout: 25s
+      retries: 5
+  ordermanagercli:
+    container_name: "ordermanagercli"
+    depends_on: 
+      db:
+        condition: service_healthy
+      rabbit:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    image: ordermanagercli
+    restart: always
+    build:
+      context: .
+      dockerfile: OrderManagerCLI/Dockerfile
+  clientcli:
+    container_name: "clientcli"
+    depends_on: 
+      rabbit:
+        condition: service_healthy
+    image: customercli
+    restart: always
+    build:
+      context: .
+      dockerfile: CustomerCLI/Dockerfile

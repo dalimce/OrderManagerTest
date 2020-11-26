@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\dalim\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\dalim\\.nuget\\packages"
+    ]
+  }
+}

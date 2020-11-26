@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "A/OnnqLcui5Uc20ZnRiGYjgraa8O0bNSl9pGs91xiKmJpBBdWZGCTefke0E0A41Ye0eNqL/kWIQru1HU+d4w0w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dalim\\source\\repos\\Azerion\\CustomerCLI\\CustomerCLI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dalim\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\dalim\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\dalim\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\dalim\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\dalim\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

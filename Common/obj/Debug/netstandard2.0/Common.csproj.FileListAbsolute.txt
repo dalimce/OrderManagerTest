@@ -1,0 +1,9 @@
+C:\Users\dalim\source\repos\Azerion\Common\bin\Debug\netstandard2.0\Common.deps.json
+C:\Users\dalim\source\repos\Azerion\Common\bin\Debug\netstandard2.0\Common.dll
+C:\Users\dalim\source\repos\Azerion\Common\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\dalim\source\repos\Azerion\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+C:\Users\dalim\source\repos\Azerion\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+C:\Users\dalim\source\repos\Azerion\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+C:\Users\dalim\source\repos\Azerion\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\dalim\source\repos\Azerion\Common\obj\Debug\netstandard2.0\Common.dll
+C:\Users\dalim\source\repos\Azerion\Common\obj\Debug\netstandard2.0\Common.pdb

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "OrderManagerCLI": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
